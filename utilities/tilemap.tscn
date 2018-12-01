@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/dev/tiles.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( 10, -10 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="Sprite2" type="Sprite" parent="." index="1"]
+
+position = Vector2( -10, -10 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="Sprite3" type="Sprite" parent="." index="2"]
+
+position = Vector2( -10, 10 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="Sprite4" type="Sprite" parent="." index="3"]
+
+position = Vector2( 10, 10 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+
