@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass_16x16.png-edfb5fbb4bb5d29f830dd0bdd5faea0d.stex"
+path="res://.import/rock_16x16.png-b129b893bc48656fe4ca7831eadee0d1.stex"
 
 [deps]
 
-source_file="res://img/grass_16x16.png"
-dest_files=[ "res://.import/grass_16x16.png-edfb5fbb4bb5d29f830dd0bdd5faea0d.stex" ]
+source_file="res://img/rock_16x16.png"
+dest_files=[ "res://.import/rock_16x16.png-b129b893bc48656fe4ca7831eadee0d1.stex" ]
 
 [params]
 
@@ -16,7 +16,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
