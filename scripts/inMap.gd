@@ -11,7 +11,7 @@ func _ready():
     pass
 
 func _process(delta):
-	joypad = 0 < len(get_connected_joypads())
+	joypad = 0 < len(Input.get_connected_joypads())
 	get_move()
 	pass
 
@@ -30,14 +30,23 @@ func get_move():
 		move = move.normalized()
 	return move
 
-func get_look(from):
+func get_look(from = null, deg = false, pos = false):
 	if joypad:
 		look = Vector2( Input.get_joy_axis(0,2),Input.get_joy_axis(0,3)).angle()
 	else:
-		mouse = get_viewport().get_mouse_position()
-		if from:
+		var view = get_viewport()
+		var mouse = view.get_mouse_position() - view.get_visible_rect().size / 2
+		if from: #not currently working
 			look = mouse.angle_to(from)
+			print (look)
 		else:
 			look = mouse.angle()
-	look = rad2deg(look)
+	if deg:	
+		look = rad2deg(look)
+		if pos:
+			if 0 < look:
+				look = 360 - look
+			else:
+				look = - look
+
 	return look
