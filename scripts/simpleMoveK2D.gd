@@ -5,20 +5,14 @@ export (float) var damping = 0.5 #time (seconds) to reach top speed
 
 var cutoff = 0.1 #acceptable threshold to target speed
 var vel = Vector2()
-var time = 0.0
-var prev = Vector2()
+var col
+
 func _ready():
 	topSpeed /= 12 #idk why it just works
 	pass
 
 func _physics_process(delta):
-	time += delta
-	if 0.2 < time:
-		print (position - prev)
-		prev = position
-		
-		time = 0
-	var target = inMap.move * topSpeed
+	var target = inMap.move * topSpeed if not col else Vector2()
 	if 0 < damping:
 		var dVel = target - vel #difference between target velocity and current velocity
 		if cutoff < dVel.length_squared(): 
@@ -28,5 +22,7 @@ func _physics_process(delta):
 	else:
 		vel = target
 	
-	move_and_collide(vel)
+	col = move_and_collide(vel)
+	print (target)
+		
 	pass
