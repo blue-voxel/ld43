@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mushroom_16x16.png-adb0f86580225bee6ee1629c58a16888.stex"
+path="res://.import/mushroom_16x16.png-8f6dc54398c639f7281588699ad8b9e3.stex"
 
 [deps]
 
-source_file="res://img/mushroom_16x16.png"
-dest_files=[ "res://.import/mushroom_16x16.png-adb0f86580225bee6ee1629c58a16888.stex" ]
+source_file="res://sprites/tiles/mushroom_16x16.png"
+dest_files=[ "res://.import/mushroom_16x16.png-8f6dc54398c639f7281588699ad8b9e3.stex" ]
 
 [params]
 

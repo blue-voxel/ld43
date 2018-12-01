@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lava_16x16.png-4c0f187efcdc848b06b1415147e34128.stex"
+path="res://.import/lava_16x16.png-ecc4d8e9c539901926427931ebb2a2e9.stex"
 
 [deps]
 
-source_file="res://img/lava_16x16.png"
-dest_files=[ "res://.import/lava_16x16.png-4c0f187efcdc848b06b1415147e34128.stex" ]
+source_file="res://sprites/tiles/lava_16x16.png"
+dest_files=[ "res://.import/lava_16x16.png-ecc4d8e9c539901926427931ebb2a2e9.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slime_16x16.png-0710ecf561ae5f738c1c0347a2ff9c83.stex"
+path="res://.import/slime_16x16.png-230d95be543e606b527714ff70449f56.stex"
 
 [deps]
 
-source_file="res://img/slime_16x16.png"
-dest_files=[ "res://.import/slime_16x16.png-0710ecf561ae5f738c1c0347a2ff9c83.stex" ]
+source_file="res://sprites/tiles/slime_16x16.png"
+dest_files=[ "res://.import/slime_16x16.png-230d95be543e606b527714ff70449f56.stex" ]
 
 [params]
 

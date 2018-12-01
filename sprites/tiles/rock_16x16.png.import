@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rock_16x16.png-b129b893bc48656fe4ca7831eadee0d1.stex"
+path="res://.import/rock_16x16.png-83bbeb2f0a5c847fb4c45efdb8d54ef0.stex"
 
 [deps]
 
-source_file="res://img/rock_16x16.png"
-dest_files=[ "res://.import/rock_16x16.png-b129b893bc48656fe4ca7831eadee0d1.stex" ]
+source_file="res://sprites/tiles/rock_16x16.png"
+dest_files=[ "res://.import/rock_16x16.png-83bbeb2f0a5c847fb4c45efdb8d54ef0.stex" ]
 
 [params]
 

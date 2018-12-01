@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mud_16x16.png-01119becd6ee048e9fbfbcaac06b27a3.stex"
+path="res://.import/mud_16x16.png-e04816301d7174df2c1dcff584671895.stex"
 
 [deps]
 
-source_file="res://img/mud_16x16.png"
-dest_files=[ "res://.import/mud_16x16.png-01119becd6ee048e9fbfbcaac06b27a3.stex" ]
+source_file="res://sprites/tiles/mud_16x16.png"
+dest_files=[ "res://.import/mud_16x16.png-e04816301d7174df2c1dcff584671895.stex" ]
 
 [params]
 
