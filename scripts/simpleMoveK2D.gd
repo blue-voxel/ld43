@@ -1,24 +1,32 @@
-extends Area2D
+extends KinematicBody2D
 
-export (float) var topSpeed = 50 #maximum speed (decimeters?)
-export (float) var damping = 1 #time (seconds) to reach top speed
+export (float) var topSpeed = 32 #maximum speed
+export (float) var damping = 0.5 #time (seconds) to reach top speed
 
 var cutoff = 0.1 #acceptable threshold to target speed
-var velocity = Vector2()
-
+var vel = Vector2()
+var time = 0.0
+var prev = Vector2()
 func _ready():
+	topSpeed /= 12 #idk why it just works
 	pass
 
-func _process(delta):
+func _physics_process(delta):
+	time += delta
+	if 0.2 < time:
+		print (position - prev)
+		prev = position
+		
+		time = 0
 	var target = inMap.move * topSpeed
 	if 0 < damping:
-		var dvelocity = target - velocity #difference between target velocity and current velocity
-		if cutoff < dvelocity.length_squared(): 
-			velocity += dvelocity.normalized() * topSpeed * delta / damping #normalized() ensures that acceleration is constant (not proportional to distance to target)
+		var dVel = target - vel #difference between target velocity and current velocity
+		if cutoff < dVel.length_squared(): 
+			vel += dVel.normalized() * topSpeed * delta / damping #normalized() ensures that acceleration is constant (not proportional to distance to target)
 		else:
-			velocity = target
+			vel = target
 	else:
-		velocity = target
+		vel = target
 	
-	position += velocity * delta
+	move_and_collide(vel)
 	pass
