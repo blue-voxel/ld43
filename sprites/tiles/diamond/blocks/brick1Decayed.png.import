@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brick.png-2a2949ca520f631eeb3d4b80946bc43c.stex"
+path="res://.import/brick1Decayed.png-184be7745d8b6c527a15d029a2c2eedf.stex"
 
 [deps]
 
-source_file="res://sprites/tiles/diamond/blocks/brick.png"
-dest_files=[ "res://.import/brick.png-2a2949ca520f631eeb3d4b80946bc43c.stex" ]
+source_file="res://sprites/tiles/diamond/blocks/brick1Decayed.png"
+dest_files=[ "res://.import/brick1Decayed.png-184be7745d8b6c527a15d029a2c2eedf.stex" ]
 
 [params]
 
