@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/tiles/diamond/blocks/brick.png" type="Texture" id=1]
+[ext_resource path="res://scripts/i'mHere2D.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+_sections_unfolded = [ "Visibility" ]
+
+[node name="redbrick" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redbrick" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redbrick/StaticBody2D" index="0"]
+
+position = Vector2( 0, 2 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redbrick2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 17, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="upper" type="Sprite" parent="redbrick2" index="0"]
+
+position = Vector2( 0, -24 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redbrick2" index="1"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redbrick2/StaticBody2D" index="0"]
+
+position = Vector2( 0, 2 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+

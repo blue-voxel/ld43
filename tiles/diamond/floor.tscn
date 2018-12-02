@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/tiles/diamond/grass.png" type="Texture" id=1]
+[ext_resource path="res://sprites/tiles/diamond/bricks.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+_sections_unfolded = [ "Visibility" ]
+
+[node name="grass" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+offset = Vector2( 0, -5 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="brick" type="Sprite" parent="." index="1"]
+
+position = Vector2( 8, 7 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -5 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+
