@@ -20,6 +20,8 @@ func _ready():
 	pass
 
 func _set_direction(dir):
+	if not sliceX:
+		_ready()
 	direction = dir
 	if 300 < direction:
 		region_rect.position.x = sliceX
