@@ -22,5 +22,5 @@ func _physics_process(delta):
 	else:
 		vel = target
 	
-	col = move_and_collide(vel)	
+	col = move_and_collide(vel)
 	pass
