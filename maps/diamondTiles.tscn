@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/camera/trackTarget.gd" type="Script" id=1]
 [ext_resource path="res://tiles/diamondFloor.tres" type="TileSet" id=2]
 [ext_resource path="res://tiles/diamondWall.tres" type="TileSet" id=3]
 [ext_resource path="res://players/player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://tiles/diamondWallUpper.tres" type="TileSet" id=5]
+[ext_resource path="res://MagicMissile.tscn" type="PackedScene" id=5]
+[ext_resource path="res://tiles/diamondWallUpper.tres" type="TileSet" id=6]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 
@@ -87,17 +88,22 @@ _sections_unfolded = [ "Cell", "Transform", "Z Index" ]
 
 [node name="KinematicBody2D" parent="level1" index="0" instance=ExtResource( 4 )]
 
-position = Vector2( -5.72626, -101.312 )
+position = Vector2( 6.27374, -39.312 )
 _sections_unfolded = [ "Transform", "Visibility", "Z Index", "collision" ]
 topSpeed = 18.0
 damping = 0.2
+
+[node name="Area2D" parent="level1" index="1" instance=ExtResource( 5 )]
+
+position = Vector2( 14.6503, -35.6982 )
+_sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="level2" type="TileMap" parent="." index="3"]
 
 material = SubResource( 1 )
 position = Vector2( 0, -10 )
 mode = 0
-tile_set = ExtResource( 5 )
+tile_set = ExtResource( 6 )
 cell_size = Vector2( 16, 7 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
