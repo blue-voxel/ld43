@@ -10,7 +10,7 @@ var reflecting
 func _ready():
     ._ready()
     frame_duration = 1 / framerate
-    ._process(0)
+    _set_direction(direction)
 
 func _process(delta):
     time += delta

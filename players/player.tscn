@@ -18,22 +18,23 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "collision" ]
+_sections_unfolded = [ "Collision", "collision" ]
 topSpeed = 32.0
 damping = 0.5
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 2 )
+offset = Vector2( 0.5, -3 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 16, 32 )
 script = ExtResource( 3 )
-_sections_unfolded = [ "Region" ]
+_sections_unfolded = [ "Offset", "Region" ]
 flipX = false
+direction = 270
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( 0, 3 )
 rotation = 1.5708
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]

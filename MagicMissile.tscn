@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 2.0
 height = 2.0
 
-[node name="Area2D" type="Area2D"]
+[node name="Magic Missile" type="Area2D"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -29,7 +29,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 1 )
-offset = Vector2( 0, -10 )
+offset = Vector2( 0, -8 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 8, 8 )
 script = ExtResource( 2 )

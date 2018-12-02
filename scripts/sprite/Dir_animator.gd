@@ -2,7 +2,7 @@ extends Sprite
 
 export (bool) var flipX = false
 
-var direction = 270
+export var direction = 270 setget _set_direction
 
 var sliceX
 var sliceY
@@ -19,7 +19,8 @@ func _ready():
 		print ("error: region must be enabled")
 	pass
 
-func _process(delta):
+func _set_direction(dir):
+	direction = dir
 	if 300 < direction:
 		region_rect.position.x = sliceX
 		flip_h = flipX
@@ -37,4 +38,3 @@ func _process(delta):
 	else:
 		region_rect.position.x = sliceX * 2
 		flip_h =  flipX
-
