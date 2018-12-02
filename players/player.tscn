@@ -12,7 +12,7 @@ custom_solver_bias = 0.0
 radius = 4.0
 height = 2.0
 
-[node name="KinematicBody2D" type="KinematicBody2D" index="0"]
+[node name="KinematicBody2D" type="KinematicBody2D"]
 
 position = Vector2( 0, -0.0969925 )
 input_pickable = false
@@ -39,16 +39,8 @@ direction = 270
 
 script = ExtResource( 4 )
 attack = ExtResource( 5 )
-delay = 0
 
 [node name="cooldown" type="Timer" parent="Sprite/weapon" index="0"]
-
-process_mode = 1
-wait_time = 1.0
-one_shot = false
-autostart = false
-
-[node name="delay" type="Timer" parent="Sprite/weapon" index="1"]
 
 process_mode = 1
 wait_time = 1.0
@@ -62,7 +54,5 @@ shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [connection signal="timeout" from="Sprite/weapon/cooldown" to="Sprite/weapon" method="set_ready"]
-
-[connection signal="timeout" from="Sprite/weapon/delay" to="Sprite/weapon" method="_fire" binds= [ false ]]
 
 

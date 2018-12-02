@@ -1,30 +1,26 @@
 extends Node2D
 
 export (PackedScene) var attack
-export (float) var firerate = 1
-export (float) var delay = 0
+
+signal add_to_world(node)
 
 const offset = 6
 
-var fire_delay
+var ready = true
 
-func _ready():
-	fire_delay = 1 / firerate
-	pass
-
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
-
-func fire(direction):
+func _fire(direction):
+	if not ready:
+		return
+	ready = false
 	var ak = attack.instance()
-	ak._set_direction(direction)
+	ak.get_node("Sprite")._set_direction(direction)
 
-	direction = deg2rad(direction)
-	var setpos = position + Vector2(cos(direction), sin(direction)) * offset
-	ak.position = setpos
-	get_parent().get_parent().get_parent().add_child(ak) #not ideal but it should work until something drastic changes
-	
+	direction = deg2rad(utils.denormalise_deg(direction))
+	ak.position = get_global_transform().get_origin()
+	ak.position += Vector2(cos(direction), sin(direction)) * offset
+	emit_signal('add_to_world', ak)
+	$cooldown.start()
 
+func set_ready():
+	ready = true
 
