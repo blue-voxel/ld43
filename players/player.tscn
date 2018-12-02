@@ -1,8 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts/simpleMoveK2D.gd" type="Script" id=1]
+[ext_resource path="res://scripts/KB2D/simpleMoveK2D.gd" type="Script" id=1]
 [ext_resource path="res://sprites/dev/wizard.png" type="Texture" id=2]
-[ext_resource path="res://scripts/Animator.gd" type="Script" id=3]
+[ext_resource path="res://scripts/sprite/Dir_animator.gd" type="Script" id=3]
+
+
+
 
 [sub_resource type="CircleShape2D" id=1]
 

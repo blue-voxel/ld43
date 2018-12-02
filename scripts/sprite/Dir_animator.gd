@@ -2,7 +2,7 @@ extends Sprite
 
 export (bool) var flipX = false
 
-var direction
+var direction = 270
 
 var sliceX
 var sliceY
@@ -20,8 +20,6 @@ func _ready():
 	pass
 
 func _process(delta):
-	direction = inMap.get_look(null, true, true)
-
 	if 300 < direction:
 		region_rect.position.x = sliceX
 		flip_h = flipX
