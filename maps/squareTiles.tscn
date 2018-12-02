@@ -1,9 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/trackTarget.gd" type="Script" id=1]
-[ext_resource path="res://tiles/sqaureFloor.tres" type="TileSet" id=2]
-[ext_resource path="res://tiles/sqaureWalls.tres" type="TileSet" id=3]
+[ext_resource path="res://tiles/sqaure/sqaureFloor.tres" type="TileSet" id=2]
+[ext_resource path="res://tiles/sqaure/sqaureWalls.tres" type="TileSet" id=3]
 [ext_resource path="res://players/player.tscn" type="PackedScene" id=4]
+
+
 
 [node name="Node" type="Node"]
 
