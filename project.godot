@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 inMap="*res://scripts/singleton/inMap.gd"
+utils="*res://scripts/singleton/utils.gd"
 
 [editor_plugins]
 

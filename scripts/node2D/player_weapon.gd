@@ -15,9 +15,9 @@ func _fire(direction):
 	var ak = attack.instance()
 	ak.get_node("Sprite")._set_direction(direction)
 
-	direction = deg2rad(direction)
+	direction = deg2rad(utils.denormalise_deg(direction))
 	ak.position = get_global_transform().get_origin()
-	ak.position -= Vector2(cos(direction), sin(direction)) * offset
+	ak.position += Vector2(cos(direction), sin(direction)) * offset
 	get_parent().get_parent().get_parent().add_child(ak) #not ideal but it should work until something drastic changes
 	
 

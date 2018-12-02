@@ -6,10 +6,6 @@ var joypad = false
 var move = Vector2()
 var look = 0.0
 
-func _ready():
-    
-    pass
-
 func _process(delta):
 	joypad = 0 < len(Input.get_connected_joypads())
 	get_move()
@@ -44,9 +40,5 @@ func get_look(from = null, deg = false, pos = false):
 	if deg:	
 		look = rad2deg(look)
 		if pos:
-			if 0 < look:
-				look = 360 - look
-			else:
-				look = - look
-
+			look = utils.normalise_deg(look)
 	return look
