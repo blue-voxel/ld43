@@ -5,15 +5,16 @@ export (float) var damage
 
 var transpose
 
-
 func _ready():
 	var direction = deg2rad(utils.denormalise_deg($Sprite.direction))
 	transpose = Vector2(cos(direction), sin(direction)) * speed
 	pass
 
 func _physics_process(delta):
-	if 0 < len(get_overlapping_bodies()):
-		on_hit(get_overlapping_bodies()[0])
+	var hits = get_overlapping_bodies()
+	if (	0 < len(hits) and 
+			utils.bodies_share_layer(self, hits[0])):
+		on_hit(hits[0])
 	position += transpose * delta
 
 
