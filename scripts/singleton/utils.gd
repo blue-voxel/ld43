@@ -29,7 +29,6 @@ func bodies_share_layer(from, to, layer = null):
         return (from.get_collision_layer_bit(i) and to.get_collision_mask_bit(i))
     for i in range(layer_count):
         if  (from.get_collision_layer_bit(i) and to.get_collision_mask_bit(i)):
-            print (true)
             return true
     return false
 

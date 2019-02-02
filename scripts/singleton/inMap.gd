@@ -34,7 +34,6 @@ func get_look(from = null, deg = false, pos = false):
 		var mouse = view.get_mouse_position() - view.get_visible_rect().size / 2
 		if from: #not currently working
 			look = mouse.angle_to(from)
-			print (look)
 		else:
 			look = mouse.angle()
 	if deg:	
