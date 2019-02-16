@@ -14,7 +14,7 @@ render_priority = 0
 blend_mode = 0
 light_mode = 0
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="Camera2D" type="Camera2D" parent="." index="0"]
 
