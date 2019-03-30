@@ -6,53 +6,38 @@
 
 [node name="Node2D" type="Node2D"]
 
-_sections_unfolded = [ "Visibility" ]
-
-[node name="floor0" type="Sprite" parent="." index="0"]
-
+[node name="floor0" type="Sprite" parent="."]
 position = Vector2( -8, -24 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 16, 16 )
-_sections_unfolded = [ "Offset", "Region" ]
 
-[node name="floor1" type="Sprite" parent="." index="1"]
-
+[node name="floor1" type="Sprite" parent="."]
 position = Vector2( -24, -24 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 0, 16, 16 )
-_sections_unfolded = [ "Offset", "Region" ]
 
-[node name="grass64" type="Sprite" parent="." index="2"]
-
+[node name="grass64" type="Sprite" parent="."]
 position = Vector2( -40, -24 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 2 )
 region_rect = Rect2( 16, 0, 16, 16 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
 
-[node name="grass16" type="Sprite" parent="." index="3"]
-
+[node name="grass16" type="Sprite" parent="."]
 position = Vector2( -40, -8 )
 texture = ExtResource( 3 )
 region_rect = Rect2( 16, 0, 16, 16 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
 
-[node name="floor2" type="Sprite" parent="." index="4"]
-
+[node name="floor2" type="Sprite" parent="."]
 position = Vector2( -24, -8 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 32, 0, 16, 16 )
-_sections_unfolded = [ "Offset", "Region" ]
 
-[node name="floor3" type="Sprite" parent="." index="5"]
-
+[node name="floor3" type="Sprite" parent="."]
 position = Vector2( -8, -8 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 48, 0, 16, 16 )
-_sections_unfolded = [ "Offset", "Region" ]
-
 
