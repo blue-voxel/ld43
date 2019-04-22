@@ -16,13 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="LD43-sacrifice"
-run/main_scene="res://maps/diamondTiles.tscn"
+run/main_scene="res://instantiable/maps/diamondTiles.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-inMap="*res://scripts/singleton/InMap.gd"
-utils="*res://scripts/singleton/Utils.gd"
+inMap="*res://script/singleton/InMap.gd"
+utils="*res://script/singleton/Utils.gd"
 
 [editor_plugins]
 

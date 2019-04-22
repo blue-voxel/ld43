@@ -1,0 +1,322 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://image/tiles/diamond/blocks/brick0.png" type="Texture" id=1]
+[ext_resource path="res://image/tiles/diamond/blocks/brick1.png" type="Texture" id=2]
+[ext_resource path="res://image/tiles/diamond/blocks/brick0Crack.png" type="Texture" id=3]
+[ext_resource path="res://image/tiles/diamond/blocks/brick1Crack.png" type="Texture" id=4]
+[ext_resource path="res://image/tiles/diamond/blocks/brick0Decayed.png" type="Texture" id=5]
+[ext_resource path="res://image/tiles/diamond/blocks/brick1Decayed.png" type="Texture" id=6]
+[ext_resource path="res://image/tiles/diamond/blocks/brick0Flower.png" type="Texture" id=7]
+[ext_resource path="res://image/tiles/diamond/blocks/brick1Flower.png" type="Texture" id=8]
+[ext_resource path="res://image/tiles/diamond/blocks/brick0Moss.png" type="Texture" id=9]
+[ext_resource path="res://image/tiles/diamond/blocks/brick1Moss.png" type="Texture" id=10]
+[ext_resource path="res://image/tiles/diamond/blocks/brick0Overgrown.png" type="Texture" id=11]
+[ext_resource path="res://image/tiles/diamond/blocks/brick1Overgrown.png" type="Texture" id=12]
+
+
+
+[node name="Node2D" type="Node2D"]
+
+_sections_unfolded = [ "Visibility" ]
+
+[node name="redBrick0" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick0" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick0/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick1" type="Sprite" parent="." index="1"]
+
+position = Vector2( 8, -18 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick1/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick0-Cracked" type="Sprite" parent="." index="2"]
+
+position = Vector2( 16, 0 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick0-Cracked" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick0-Cracked/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick1-Cracked" type="Sprite" parent="." index="3"]
+
+position = Vector2( 24, -18 )
+texture = ExtResource( 4 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick1-Cracked" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick1-Cracked/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick0-Decayed" type="Sprite" parent="." index="4"]
+
+position = Vector2( 32, 0 )
+texture = ExtResource( 5 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick0-Decayed" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick0-Decayed/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick1-Decayed" type="Sprite" parent="." index="5"]
+
+position = Vector2( 40, -18 )
+texture = ExtResource( 6 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick1-Decayed" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick1-Decayed/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick0-Flower" type="Sprite" parent="." index="6"]
+
+position = Vector2( 48, 0 )
+texture = ExtResource( 7 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick0-Flower" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick0-Flower/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick1-Flower" type="Sprite" parent="." index="7"]
+
+position = Vector2( 56, -18 )
+texture = ExtResource( 8 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick1-Flower" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick1-Flower/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick0-Mossy" type="Sprite" parent="." index="8"]
+
+position = Vector2( 64, 0 )
+texture = ExtResource( 9 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick0-Mossy" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick0-Mossy/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick1-Mossy" type="Sprite" parent="." index="9"]
+
+position = Vector2( 72, -18 )
+texture = ExtResource( 10 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick1-Mossy" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick1-Mossy/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick0-Overgrown" type="Sprite" parent="." index="10"]
+
+position = Vector2( 80, 0 )
+texture = ExtResource( 11 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick0-Overgrown" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick0-Overgrown/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="redBrick1-Overgrown" type="Sprite" parent="." index="11"]
+
+position = Vector2( 88, -18 )
+texture = ExtResource( 12 )
+offset = Vector2( 0, -14 )
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="redBrick1-Overgrown" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Pickable" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="redBrick1-Overgrown/StaticBody2D" index="0"]
+
+position = Vector2( 0, 12 )
+build_mode = 0
+polygon = PoolVector2Array( 0, -4, -8, -10, 0, -16, 8, -10 )
+_sections_unfolded = [ "Transform" ]
+
+

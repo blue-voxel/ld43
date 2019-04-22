@@ -1,4 +1,4 @@
-extends  "res://scripts/node2d/_Weapon.gd"
+extends "res://script/node2d/_Weapon.gd"
 
 func _process(delta):
 	if Input.is_action_pressed('primary_attack'):
