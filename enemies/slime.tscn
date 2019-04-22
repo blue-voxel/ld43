@@ -43,10 +43,9 @@ rotation = 1.5708
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -8 )
+position = Vector2( 0, -6 )
 frames = SubResource( 2 )
 animation = "reduced"
-frame = 9
 playing = true
 
 [node name="Particles2D" type="Particles2D" parent="."]

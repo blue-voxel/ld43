@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://scripts/camera/trackTarget.gd" type="Script" id=1]
+[ext_resource path="res://scripts/camera/TrackTarget.gd" type="Script" id=1]
 [ext_resource path="res://tiles/diamondFloor.tres" type="TileSet" id=2]
 [ext_resource path="res://tiles/diamondWall.tres" type="TileSet" id=3]
-[ext_resource path="res://scripts/node2D/adopt_instance.gd" type="Script" id=4]
+[ext_resource path="res://scripts/node2D/AdoptInstance.gd" type="Script" id=4]
 [ext_resource path="res://players/player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://enemies/slime.tscn" type="PackedScene" id=6]
 [ext_resource path="res://tiles/diamondWallUpper.tres" type="TileSet" id=7]
