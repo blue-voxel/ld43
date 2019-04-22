@@ -11,14 +11,15 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	var hits = get_overlapping_bodies()
-	if (	0 < len(hits) and\
-			utils.bodies_share_layer(self, hits[0])):
-		_on_hit(hits[0])
 	position += transpose * delta
 
+func test(body):
+	print(body)
 
 func _on_hit(body):
+	var life = body.get_node_or_null("Life")
+	if life:
+		life.damage(damage)
 	die()
 
 func die():

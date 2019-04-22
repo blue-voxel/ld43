@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "Life",
+"language": "GDScript",
+"path": "res://script/node/Life.gd"
+} ]
 _global_script_class_icons={
-
+"Life": "res://image/dev/heart.svg"
 }
 
 [application]

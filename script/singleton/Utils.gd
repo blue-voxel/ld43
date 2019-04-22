@@ -1,10 +1,12 @@
 extends Node
 
-const collision_layers = {
-    'static' : 0,
-    'firendly' : 1,
-    'enemy' : 2,
-    'attack' : 3
+const COLLISION_LAYERS = {
+    'friendly_static' : 0, #static obstacles affecting friendlies (should be the same as 'enemy_static' in almost all cases)
+    'friendly_character' : 1,
+    'friendly_health_mod' : 2, #things that modify health of friendlies, usually attacks
+    'enemy_static' : 10,
+    'enemy_character' : 11,
+    'enemy_health_mod' : 12
 }
 
 const layer_count = 20
@@ -21,7 +23,7 @@ func denormalise_deg(angle):
         return -angle
 
 func layer_of(name):
-    return collision_layers[name]
+    return COLLISION_LAYERS[name]
 
 func bodies_share_layer(from, to, layer = null):
     if layer:
