@@ -16,7 +16,7 @@ func move(target, delta):
     else:
         vel = target
     
-    move_and_slide(vel)
+    vel = move_and_slide(vel)
 
 func _ready():
 	pass
