@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://script/kb2d/PlayerMove.gd" type="Script" id=1]
 [ext_resource path="res://script/node/Life.gd" type="Script" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://script/sprite/LookDirection.gd" type="Script" id=4]
 [ext_resource path="res://script/node2d/PlayerWeapon.gd" type="Script" id=5]
 [ext_resource path="res://instantiable/weapons/MagicMissile.tscn" type="PackedScene" id=6]
+
+[sub_resource type="CanvasItemMaterial" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.0
@@ -21,6 +23,7 @@ script = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+material = SubResource( 2 )
 texture = ExtResource( 3 )
 offset = Vector2( 0.5, -3 )
 region_enabled = true

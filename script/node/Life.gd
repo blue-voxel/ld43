@@ -9,7 +9,6 @@ signal on_hit
 signal on_killed
 
 func damage(amount):
-
     emit_signal("on_hit")
     life -= amount
     if life <= 0:
